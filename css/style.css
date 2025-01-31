@@ -12,40 +12,19 @@
 
 /**** DEBUG ****/
 
-.debug header {
-    height: 80px;
-    background-color: #add8e6;
-}
-
-.debug nav {
-    background-color: #daa520;
-    height: 50px;
-    width: 80%;
-}
-
+.debug .wrapper > *,
+.wrapper:empty,
 .debug nav > * {
     border: 2px dotted black;
 }
 
-.debug .section-1 {
-    height: 500px;
-    background-color: #00008b;
+.debug nav {
+    background-color: #daa520;
 }
 
-.debug .section-1 div {
+.debug .section-1 .wrapper {
     background-color: #ee82ee;
     height: 400px;
-    width: 60%;
-    border: 2px dotted black;
-}
-
-.debug .section-2 {
-    height: 600px;
-}
-
-.debug .section-2 .wrapper {
-    height: 500px;
-    width: 80%;
 }
 
 .debug .section-2 .content-1 {
@@ -58,16 +37,6 @@
     height: 500px;
 }
 
-.debug .section-3 {
-    background-color: #d3d3d3;
-    height: 600px;
-}
-
-.debug .section-3 .wrapper {
-    height: 500px;
-    width: 80%;
-}
-
 .debug .section-3 .content-1 {
     background-color: #1e90ff;
     height: 500px;
@@ -76,15 +45,6 @@
 .debug .section-3 .content-2 {
     background-color: #ffc0cb;
     height: 500px;
-}
-
-.debug .section-4 {
-    height: 600px;
-}
-
-.debug .section-4 .wrapper {
-    height: 500px;
-    width: 80%;
 }
 
 .debug .section-4 .content-1 {
@@ -97,84 +57,96 @@
     height: 500px;
 }
 
-.debug .section-5 {
-    background-color: #d3d3d3;
-    height: 1000px;
-}
-
 .debug .section-5 .wrapper {
     background-color: #228b22;
     height: 900px;
-    width: 80%;
-    border: 2px dotted black;
-}
-
-.debug .section-6 {
-    background-color: #23272a;
-    height: 630px;
 }
 
 .debug .section-6 .wrapper {
     background-color: #228b22;
-    height: 580px;
-    width: 80%;
 }
 
 .debug .section-6 .content-1 {
+    background-color: #20b2aa;
+}
+
+.debug .section-6 .content-2 {
     background-color: #f08080;
     height: 580px;
 }
 
-.debug .section-6 .content-2 {
-    background-color: #20b2aa;
-    height: 580px;
-}
-
-.debug .section-6 .content-2 > div {
+.debug .section-6 .content-1 > div {
     border: 2px dotted white;
-}
-
-.debug .section-7 {
-    background-color: #23272a;
-    height: 110px;
 }
 
 .debug .section-7 .wrapper {
     background-color: #7fffd4;
-    height: 80px;
-    width: 80%;
 }
 
 .debug .section-7 .wrapper > * {
     background-color: #ffb6c1;
-    border: 2px dotted black;
 }
 
-.debug .wrapper > * {
-    border: 2px dotted black;
+/**** COMMON *****/
+
+.bg-1 {
+    background-color: #add8e6;
+}
+.bg-2 {
+    background-color: #00008b;
+}
+
+.bg-3 {
+    background-color: #d3d3d3;
+}
+
+.bg-4 {
+    background-color: #23272a;
+}
+
+header,
+footer .section-7,
+.section-7 .wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section > div,
+nav {
+    margin: 0 auto;
+}
+
+.wrapper,
+nav {
+    width: 80%;
+}
+
+.wrapper .content-1,
+nav .links {
+    flex-grow: 2;
+}
+
+.wrapper .content-2,
+nav > * {
+    flex-grow: 1;
 }
 
 /**** HEADER ***/
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav > * {
-    flex-grow: 1;
-    padding: 15px;
+    padding: 10px;
 }
 
 nav .links {
-    flex-grow: 2;
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -190,19 +162,11 @@ nav .login {
 
 /* SECTION 1 */
 
-main .section-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main .section-1 .wrapper {
+    width: 60%;
 }
 
 /* SECTION 2 */
-
-main .section-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 main .section-2 .wrapper {
     display: flex;
@@ -210,39 +174,16 @@ main .section-2 .wrapper {
     align-items: center;
 }
 
-.wrapper .content-1 {
-    flex-grow: 2;
-}
-
-.wrapper .content-2 {
-    flex-grow: 1;
-}
-
 /* SECTION 3 */
-
-main .section-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 main .section-3 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.section-3 .wrapper .content-1 {
-    order: 1;
+    flex-direction: row-reverse;
 }
 
 /* SECTION 4 */
-
-main .section-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 main .section-4 .wrapper {
     display: flex;
@@ -250,54 +191,32 @@ main .section-4 .wrapper {
     align-items: center;
 }
 
-/* SECTION 5 */
-
-main .section-5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/***** FOOTER *****/
 
 /* SECTION 6 */
 
 footer .section-6 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     border-bottom: 1px solid #c4c4c4;
+    padding-top: 5px;
 }
 
 footer .section-6 .wrapper {
     margin-top: 10px;
     display: flex;
-}
-
-footer .section-6 .wrapper > div {
-    border: 2px dotted black;
-}
-
-.section-6 .wrapper .content-2 {
-    display: flex;
-}
-
-.section-6 .wrapper .content-2 > div {
-    flex-grow: 1;
+    flex-direction: row-reverse;
 }
 
 .section-6 .wrapper .content-1 {
-    flex-grow: 1;
+    display: flex;
 }
 
-.section-6 .wrapper .content-2 {
-    flex-grow: 2;
+.section-6 .wrapper .content-1 > div {
+    flex-grow: 1;
 }
 
 /* SECTION 7 */
 
 footer .section-7 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -309,5 +228,5 @@ footer .section-7 .wrapper {
 }
 
 .section-7 .wrapper > * {
-    padding: 10px;
+    padding: 5px;
 }
