@@ -23,6 +23,18 @@
     border: 2px dotted black;
 }
 
+.debug .section-1 {
+    height: 500px;
+    background-color: #00008b;
+}
+
+.debug .section-1 div {
+    background-color: #ee82ee;
+    height: 400px;
+    width: 60%;
+    border: 2px dotted black;
+}
+
 /**** HEADER ***/
 
 header {
@@ -53,4 +65,14 @@ nav .links {
 
 nav .login {
     text-align: right;
+}
+
+/***** MAIN ****/
+
+/* SECTION 1 */
+
+main .section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
