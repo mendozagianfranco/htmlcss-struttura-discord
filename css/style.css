@@ -106,6 +106,7 @@
     background-color: #228b22;
     height: 900px;
     width: 80%;
+    border: 2px dotted black;
 }
 
 .debug .section-6 {
@@ -146,6 +147,10 @@
 
 .debug .section-7 .wrapper > * {
     background-color: #ffb6c1;
+    border: 2px dotted black;
+}
+
+.debug .wrapper > * {
     border: 2px dotted black;
 }
 
