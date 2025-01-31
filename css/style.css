@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.btn {
+    all: unset;
+}
+
 /**** DEBUG ****/
 
 .debug header {
@@ -127,6 +131,22 @@
 
 .debug .section-6 .content-2 > div {
     border: 2px dotted white;
+}
+
+.debug .section-7 {
+    background-color: #23272a;
+    height: 110px;
+}
+
+.debug .section-7 .wrapper {
+    background-color: #7fffd4;
+    height: 80px;
+    width: 80%;
+}
+
+.debug .section-7 .wrapper > * {
+    background-color: #ffb6c1;
+    border: 2px dotted black;
 }
 
 /**** HEADER ***/
@@ -265,4 +285,24 @@ footer .section-6 .wrapper > div {
 
 .section-6 .wrapper .content-2 {
     flex-grow: 2;
+}
+
+/* SECTION 7 */
+
+footer .section-7 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+footer .section-7 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-7 .wrapper > * {
+    padding: 10px;
 }
