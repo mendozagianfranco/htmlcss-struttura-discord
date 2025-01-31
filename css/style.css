@@ -235,19 +235,19 @@ main .section-5 {
 
 /* SECTION 6 */
 
-main .section-6 {
+footer .section-6 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     border-bottom: 1px solid #c4c4c4;
 }
 
-main .section-6 .wrapper {
+footer .section-6 .wrapper {
     margin-top: 10px;
     display: flex;
 }
 
-main .section-6 .wrapper > div {
+footer .section-6 .wrapper > div {
     border: 2px dotted black;
 }
 
