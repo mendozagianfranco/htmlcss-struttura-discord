@@ -54,6 +54,26 @@
     height: 500px;
 }
 
+.debug .section-3 {
+    background-color: #d3d3d3;
+    height: 600px;
+}
+
+.debug .section-3 .wrapper {
+    height: 500px;
+    width: 80%;
+}
+
+.debug .section-3 .content-1 {
+    background-color: #1e90ff;
+    height: 500px;
+}
+
+.debug .section-3 .content-2 {
+    background-color: #ffc0cb;
+    height: 500px;
+}
+
 /**** HEADER ***/
 
 header {
@@ -116,4 +136,22 @@ main .section-2 .wrapper {
 
 .wrapper .content-2 {
     flex-grow: 1;
+}
+
+/* SECTION 3 */
+
+main .section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section-3 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 .wrapper .content-1 {
+    order: 1;
 }
