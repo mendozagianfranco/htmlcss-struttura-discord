@@ -35,6 +35,25 @@
     border: 2px dotted black;
 }
 
+.debug .section-2 {
+    height: 600px;
+}
+
+.debug .section-2 .wrapper {
+    height: 500px;
+    width: 80%;
+}
+
+.debug .section-2 .content-1 {
+    background-color: #1e90ff;
+    height: 500px;
+}
+
+.debug .section-2 .content-2 {
+    background-color: #ffc0cb;
+    height: 500px;
+}
+
 /**** HEADER ***/
 
 header {
@@ -75,4 +94,26 @@ main .section-1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* SECTION 2 */
+
+main .section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section-2 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .content-1 {
+    flex-grow: 2;
+}
+
+.wrapper .content-2 {
+    flex-grow: 1;
 }
